@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.display-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #171f46;
+}
+
+.bg-color-btn {
+  background-color: #8b5cf6;
+  color: #ffffff;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 9px;
+  border-radius: 10px;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.no-bg-btn {
+  background-color: transparent;
+  color: #9897f0;
+  border: #9897f0 1px solid;
+  font-family: 'Roboto';
+  font-size: 9px;
+  border-radius: 10px;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.input-tag {
+  width: 90%;
+  padding: 4px;
+  margin-top: 4px;
+  font-family: 'Roboto';
+  font-size: 10px;
+}
+
+.label {
+  color: #b5b7c4;
+  font-family: 'Roboto';
+  font-size: 10px;
+}
+
+.btn {
+  background-color: #8b5cf6;
+  color: #ffffff;
+  border-radius: 6px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  border: none;
+  padding: 5px;
+  width: 50px;
+}
+
+.appointment-img {
+  display: none;
+}
+
+.list-container {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .background {
+    padding: 30px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .no-bg-btn {
+    font-size: 18px;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  .bg-color-btn {
+    font-size: 18px;
+    padding: 5px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  .label {
+    font-size: 14px;
+  }
+  .input-tag {
+    width: 100%;
+    font-size: 16px;
+  }
+  .appointment-img {
+    display: block;
+    width: 50%;
+  }
+}
